@@ -1,9 +1,0 @@
-Hii! Lets start coding :)
-
-Here are the things you have to do:
-
-1. First fork the repo and clone it
-2. Maintain Separate Folder for every week so that it will be easy to track.
-3. Add your solution in the floder and, push it to your repo and place PR.
-
-Happy Coding!
