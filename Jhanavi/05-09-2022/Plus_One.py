@@ -10,5 +10,3 @@ class Solution(object):
        for i in res :
             x.append(int(i))
        return res     
-        
-        
