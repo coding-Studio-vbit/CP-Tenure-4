@@ -4,28 +4,28 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        int d,c,suma=0,sumb=0,ta,tb;
+        int d,c,sum1=0,sum2=0,t1,t2;
         cin>>d>>c;
         int a[3];
         int b[3];
         for(int i = 0;i<3;i++){
             cin>>a[i];
-            suma+=a[i];
+            sum1+=a[i];
         }
         for(int i = 0;i<3;i++){
             cin>>b[i];
-            sumb+=b[i];
+            sum2+=b[i];
         }
         
-        ta = suma+sumb+(d*2);
+        t1 = sum1+sum2+(d*2);
         
-        if(suma<150)
-            suma+=d;
-        if(sumb<150)
-            sumb+=d;
-        tb=suma+sumb+c;
+        if(sum1<150)
+            sum1+=d;
+        if(sum2<150)
+            sum2+=d;
+        t2=sum1+sum2+c;
         
-        if(tb<ta)
+        if(t1<t2)
             cout<<"YES"<<endl;
         else
             cout<<"NO"<<endl;
