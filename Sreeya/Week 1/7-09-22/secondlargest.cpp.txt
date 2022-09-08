@@ -1,0 +1,16 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	int a[10],t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+	   for(int i=0;i<t;i++)
+	        cin>>a[i];
+	   sort(a,a+t);
+	   cout<<a[1]<<endl;
+	}
+	return 0;
+}
