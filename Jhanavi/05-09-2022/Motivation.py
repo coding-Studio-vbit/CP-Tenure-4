@@ -14,4 +14,3 @@ for i in range (t):
                 res=a2[i]
                 
     print(res)
-        
