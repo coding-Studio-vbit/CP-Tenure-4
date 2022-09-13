@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,a1,a2,a3,b1,b2,b3,tot1,tot2,d,c,sum=0,sumc=0;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+	    cin>>d>>c;
+	    cin>>a1>>a2>>a3;
+	    cin>>b1>>b2>>b3;
+	    tot1=a1+a2+a3;
+	    tot2=b1+b2+b3;
+	    sum=tot1+tot2+2*d;
+	    if(tot1>=150&&tot2>=150)
+	    sumc=tot1+tot2+c;
+	    else if(tot1>=150||tot2>=150)
+	    sumc=tot1+tot2+c+d;
+	    else
+	    sumc=sum;
+	    if(sumc<sum)
+	    cout<<"YES"<<endl;
+	    else
+	    cout<<"NO"<<endl;
+	    
+	    
+	}
+	return 0;
+}
