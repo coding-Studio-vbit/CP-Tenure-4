@@ -17,7 +17,7 @@ for _ in range(int(input())):
             op = not op
     print(''.join(ans))
         
-# // hgfeabcdij
-# // dcbaefghij
-# // abcdefghij
+# // abcdefghij 
+# dcbaefghij
+# hgfeabcdij
 # // hgfeabcdij
