@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+         for(int i = 0 ; i< nums.size();i++)
+         {
+            int leftsum = accumulate(nums.begin(),nums.begin()+i,0);
+            int rightsum= accumulate(nums.begin()+i,nums.end(),0)-nums[i];
+            if(leftsum == rightsum ) 
+                return i;                
+        }
+        return -1;
+    }
+}
