@@ -9,15 +9,15 @@ var minSubArrayLen = function (target, nums) {
     let res = []
     while (j < nums.length) {
         sum += nums[j]
-        if (sum >= target) {
+        
             while (sum > target && sum - nums[i] >= target) {
                 sum -= nums[i]
                 i++
             }
-
+        if (sum >= target) 
             res.push([j - i+1, i, j])
             
-        }
+        
         j++
     }
     if (res.length === 0) {
