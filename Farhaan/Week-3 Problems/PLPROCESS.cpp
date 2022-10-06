@@ -6,21 +6,14 @@ using namespace std;
 
 int main(){
 	farhaan{ 
-		ll n,sum=0;
-        cin>>n;
-        ll a[n];
-        ll pre[n];
-        
-        for(int i=0;i<n;i++){
-            cin >> a[i];
-            sum += a[i];
-            pre[i]=sum;
-        }
-        
-        ll res = sum;
-        for(int i=0;i<n;i++)
-            res = min(max(pre[i],(sum-pre[i])),res);
-        
-        cout << res << endl;
+		for(int i =0;i<100;i++){
+			for(int j = 0;j<100;j++){
+				int res  = i&j;
+				if(res==11){
+					cout<<i<<" "<<j<<" "<<res;
+					nl;
+				}
+			}
+		}
 	}	
 }
