@@ -32,4 +32,4 @@ var bsearch = function (nums, target,i) {
     return 0;
 }
 
-console.log(twoSum([1, 3,4,4], 8));
+console.log(twoSum([1, 3, 4 ,4], 8));
